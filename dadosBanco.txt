@@ -1,0 +1,22 @@
+tb_processo
+	irá salvar a TR com a data de gravação e observação sobre a TR nome da empresa vinculada
+colunas
+int:cod,PK
+string(13):TR
+string:nomeEmpresa(200)
+string:observacao(500)
+
+tb_desc_desp
+	contem todas as despesas e codigos que serão vinculados a despesas
+colunas
+int:cod,PK
+string:descricao(50)
+
+tb_grupo
+	contem os grupos de despesas que podem serão vinculados a TR
+colunas
+int:cod,PK
+string:grupo(50)	
+
+tb_desp
+	contem as despesas e os grupos de todas as tr
